@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		"
+       default-lazy-init="true">
+
+    <!-- 开启AOP监听 只对当前配置文件有效 -->
+    <!--<aop:aspectj-autoproxy expose-proxy="true"/>-->
+
+
+    <!--<bean id="namelessAdvice" class="com.nameless.aop.advisor.NamelessPointcutAdvisor">
+        <constructor-arg>
+            <ref></ref>
+        </constructor-arg>
+
+    </bean>
+
+    <aop:config expose-proxy="true" proxy-target-class="true">
+
+        <aop:pointcut id="txPointcut" expression="execution(* com.nameless..service.*.*(..)) or execution(* com.nameless..appservice.*.*(..))"/>
+        <aop:advisor id="txAdvisor" advice-ref="namelessAdvice" pointcut-ref="txPointcut"/>
+    </aop:config>-->
+
+</beans>
