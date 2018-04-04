@@ -14,6 +14,5 @@ public class App {
         IHello hello = (IHello) ac.getBean("hello");
         hello.sayHello("你好");
 
-
     }
 }

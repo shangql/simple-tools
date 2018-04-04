@@ -14,12 +14,12 @@
     <bean id="namelessAspect" class="com.nameless.aop.aspect.NamelessAspect"></bean>
 
     <aop:config>
-        <aop:aspect id="" ref="namelessAspect" order="1">
-            <aop:pointcut id="employeeAroundAdvice" expression="execution(* com.nameless..service.*.*(..)) or execution(* com.nameless..appservice.*.*(..))"></aop:pointcut>
+        <aop:aspect ref="namelessAspect" order="1">
+            <aop:pointcut id="namelessPointcut" expression="execution(* com.nameless..service.*.*(..)) or execution(* com.nameless..appservice.*.*(..))"></aop:pointcut>
             <!--
                 method="namelessAroundAdvice" - com.nameless.aop.aspect.NamelessAspect.namelessAroundAdvice(... proceedingJoinPoint )
             -->
-            <aop:around method="namelessAroundAdvice" arg-names="proceedingJoinPoint" pointcut-ref="employeeAroundAdvice" ></aop:around>
+            <aop:around method="namelessAroundAdvice" arg-names="proceedingJoinPoint" pointcut-ref="namelessPointcut" ></aop:around>
         </aop:aspect>
 
     </aop:config>
