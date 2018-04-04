@@ -9,20 +9,19 @@
        default-lazy-init="true">
 
     <!-- 开启AOP监听 只对当前配置文件有效 -->
-    <!--<aop:aspectj-autoproxy expose-proxy="true"/>-->
+    <aop:aspectj-autoproxy expose-proxy="true"/>
 
+    <bean id="namelessAspect" class="com.nameless.aop.aspect.NamelessAspect"></bean>
 
-    <!--<bean id="namelessAdvice" class="com.nameless.aop.advisor.NamelessPointcutAdvisor">
-        <constructor-arg>
-            <ref></ref>
-        </constructor-arg>
+    <aop:config>
+        <aop:aspect id="" ref="namelessAspect" order="1">
+            <aop:pointcut id="employeeAroundAdvice" expression="execution(* com.nameless..service.*.*(..)) or execution(* com.nameless..appservice.*.*(..))"></aop:pointcut>
+            <!--
+                method="namelessAroundAdvice" - com.nameless.aop.aspect.NamelessAspect.namelessAroundAdvice(... proceedingJoinPoint )
+            -->
+            <aop:around method="namelessAroundAdvice" arg-names="proceedingJoinPoint" pointcut-ref="employeeAroundAdvice" ></aop:around>
+        </aop:aspect>
 
-    </bean>
-
-    <aop:config expose-proxy="true" proxy-target-class="true">
-
-        <aop:pointcut id="txPointcut" expression="execution(* com.nameless..service.*.*(..)) or execution(* com.nameless..appservice.*.*(..))"/>
-        <aop:advisor id="txAdvisor" advice-ref="namelessAdvice" pointcut-ref="txPointcut"/>
-    </aop:config>-->
+    </aop:config>
 
 </beans>
