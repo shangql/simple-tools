@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="simple-aop" />
+        <module name="simple-hibernate" />
         <module name="simple-poi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="simple-aop" target="1.8" />
+      <module name="simple-hibernate" target="1.8" />
       <module name="simple-poi" target="1.8" />
       <module name="simple-tools" target="1.8" />
     </bytecodeTargetLevel>

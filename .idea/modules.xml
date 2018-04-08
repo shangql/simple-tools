@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/simple-aop/simple-aop.iml" filepath="$PROJECT_DIR$/simple-aop/simple-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-hibernate/simple-hibernate.iml" filepath="$PROJECT_DIR$/simple-hibernate/simple-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-poi/simple-poi.iml" filepath="$PROJECT_DIR$/simple-poi/simple-poi.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-tools.iml" filepath="$PROJECT_DIR$/simple-tools.iml" />
     </modules>
