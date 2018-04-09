@@ -1,6 +1,8 @@
 package com.nameless.hibernate.entity;
 
+import com.nameless.hibernate.base.AbstractEntity;
 import com.nameless.hibernate.base.BaseAuditableEntity;
+import com.nameless.hibernate.base.BaseHibernateRepository;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -11,8 +13,11 @@ import java.util.List;
  */
 @Entity
 @Table(name = "fmsCCPDataSource")
-public class CCPDataSource extends BaseAuditableEntity<String> {
+public class CCPDataSource extends AbstractEntity<Integer> {
 
+    @Id
+    //@GeneratedValue
+    private Integer id;
     @Column(nullable = false, length = 50)
     private String code;
     @Column(nullable = false, length = 200)
@@ -71,5 +76,15 @@ public class CCPDataSource extends BaseAuditableEntity<String> {
 
     public void setChildList(List<CCPDataSource> childList) {
         this.childList = childList;
+    }
+
+    @Override
+    public Integer getId() {
+        return this.id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id ;
     }
 }
