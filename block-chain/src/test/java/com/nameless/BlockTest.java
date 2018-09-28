@@ -72,7 +72,7 @@ public class BlockTest {
     public Block createBlock(byte[] previousBytes , String data){
         long s = System.currentTimeMillis();
         Block block = Block.byte2obj(previousBytes).nextBlock(data);
-        while(!block.getHash().startsWith("0000")){
+        while(!block.getHash().startsWith("000")){
             block = createBlock(previousBytes,data);
         }
         long e = System.currentTimeMillis();

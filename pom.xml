@@ -10,6 +10,7 @@
         <module>simple-aop</module>
         <module>simple-hibernate</module>
         <module>block-chain</module>
+        <module>jvm-tester</module>
     </modules>
     <packaging>pom</packaging>
 

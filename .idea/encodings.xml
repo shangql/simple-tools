@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/block-chain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-tester" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/simple-aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/simple-hibernate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/simple-poi" charset="UTF-8" />
