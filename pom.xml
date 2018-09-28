@@ -9,6 +9,7 @@
         <module>simple-poi</module>
         <module>simple-aop</module>
         <module>simple-hibernate</module>
+        <module>block-chain</module>
     </modules>
     <packaging>pom</packaging>
 
