@@ -11,6 +11,7 @@
         <module>simple-hibernate</module>
         <module>block-chain</module>
         <module>jvm-tester</module>
+        <module>leetcode</module>
     </modules>
     <packaging>pom</packaging>
 

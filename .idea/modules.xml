@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/block-chain/block-chain.iml" filepath="$PROJECT_DIR$/block-chain/block-chain.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm-tester/jvm-tester.iml" filepath="$PROJECT_DIR$/jvm-tester/jvm-tester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-aop/simple-aop.iml" filepath="$PROJECT_DIR$/simple-aop/simple-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-hibernate/simple-hibernate.iml" filepath="$PROJECT_DIR$/simple-hibernate/simple-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-poi/simple-poi.iml" filepath="$PROJECT_DIR$/simple-poi/simple-poi.iml" />
