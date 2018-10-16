@@ -12,4 +12,5 @@ import java.lang.annotation.RetentionPolicy;
 //被子类继承
 @Inherited
 public @interface TestAnnotationInherited {
+    String name() default "";
 }
