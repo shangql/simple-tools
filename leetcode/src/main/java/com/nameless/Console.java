@@ -13,12 +13,12 @@ public class Console {
     static MathContext mc = new MathContext(4);
 
     public static void main(String[] args) {
-        for(int i=1;i<= 15;i++){
-            downside(i);
-        }
 //        for(int i=1;i<= 15;i++){
-//            upside(i);
+//            downside(i);
 //        }
+        for(int i=1;i<= 15;i++){
+            upside(i);
+        }
     }
 
     public static void downside(int i){
