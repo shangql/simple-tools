@@ -1,8 +1,6 @@
-package com.nameless;
+package com.nameless.annotation;
 
 import org.junit.Test;
-
-import java.lang.annotation.Annotation;
 
 /**
  * Created by boysz on 2018/10/16.

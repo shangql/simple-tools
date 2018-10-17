@@ -1,4 +1,4 @@
-package com.nameless;
+package com.nameless.annotation;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.nameless;
+package com.nameless.annotation;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
@@ -9,6 +9,8 @@ import java.lang.annotation.RetentionPolicy;
  */
 //@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TestAnnotation {
+//被子类继承
+@Inherited
+public @interface TestAnnotationInherited {
     String name() default "";
 }
