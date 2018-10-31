@@ -1,5 +1,0 @@
-com\nameless\aop\advisor\NamelessPointcutAdvisor.class
-com\nameless\App.class
-com\nameless\aop\aspect\NamelessAspect.class
-com\nameless\aop\service\IHello.class
-com\nameless\aop\service\impl\HelloService.class
