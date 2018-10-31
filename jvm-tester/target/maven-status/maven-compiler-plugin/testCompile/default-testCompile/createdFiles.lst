@@ -1,0 +1,11 @@
+com\nameless\asm\TestBean.class
+com\nameless\clazzloader\DiffJarsLoaderTest.class
+com\nameless\annotation\TestAnnotationUsecase.class
+com\nameless\asm\TestService.class
+com\nameless\asm\TestAnnotationUsecase.class
+com\nameless\JvmTester.class
+com\nameless\asm\TestServiceImpl.class
+com\nameless\annotation\TestAnnotationInherited.class
+com\nameless\annotation\TestAnnotation.class
+com\nameless\annotation\TestAnnotationUsecaseSubclass.class
+com\nameless\SocketTest.class

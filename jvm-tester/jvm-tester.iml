@@ -16,18 +16,18 @@
     <orderEntry type="library" name="Maven: com.esotericsoftware:reflectasm:1.11.7" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.4" level="project" />
     <orderEntry type="module-library">
-      <library>
+      <library name="Maven: DIFF:DIFF-1.0-SNAPSHOT:unknown">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/resources/jars/jvm-tester-1.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/resources/jars/DIFF-1.0-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library>
+      <library name="Maven: DIFF:DIFF-2.0-SNAPSHOT:unknown">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/resources/jars/jvm-tester-2.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/resources/jars/DIFF-2.0-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
