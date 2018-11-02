@@ -41,19 +41,19 @@
             <version>1.16.4</version>
         </dependency>
 
-        <dependency>
-            <groupId>DIFF</groupId>
-            <artifactId>DIFF-1.0-SNAPSHOT</artifactId>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/resources/jars/DIFF-1.0-SNAPSHOT.jar</systemPath>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>DIFF</groupId>-->
+            <!--<artifactId>DIFF-1.0-SNAPSHOT</artifactId>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/resources/jars/DIFF-1.0-SNAPSHOT.jar</systemPath>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>DIFF</groupId>
-            <artifactId>DIFF-2.0-SNAPSHOT</artifactId>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/resources/jars/DIFF-2.0-SNAPSHOT.jar</systemPath>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>DIFF</groupId>-->
+            <!--<artifactId>DIFF-2.0-SNAPSHOT</artifactId>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/resources/jars/DIFF-2.0-SNAPSHOT.jar</systemPath>-->
+        <!--</dependency>-->
 
 
 
