@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
@@ -90,6 +91,76 @@ public class DiffJarsLoaderTest {
         System.out.println(r);
         System.out.println(clazz.getName());
 
+    }
+
+    /**
+     * 测试父URLClassLoader.addURL后，子this.getClass().getClassLoader()能不能Class.forName(...).
+     * 子AppClassLoader可以找到父ExtClassLoader，Loader的Class
+     */
+    @Test
+    public void testParentLoadJars() throws NoSuchMethodException, MalformedURLException, InvocationTargetException, IllegalAccessException, ClassNotFoundException, InstantiationException {
+        ClassLoader parentClassLoader = ClassLoader.getSystemClassLoader().getParent();
+        //Parent Class Loader : sun.misc.Launcher$ExtClassLoader@452b3a41
+        System.out.println("Parent Class Loader : " + parentClassLoader);
+
+        Method addURL = URLClassLoader.class.getDeclaredMethod("addURL",new Class[]{ URL.class });
+        addURL.setAccessible(true);
+        addURL.invoke(parentClassLoader,
+                new Object[]{
+                new File("D:/workspace/simple-tools/jvm-tester/resources/jars/DIFF-2.0-SNAPSHOT.jar").toURI().toURL()});
+
+
+        ClassLoader thisClassLoader = this.getClass().getClassLoader();
+        //This Class Loader : sun.misc.Launcher$AppClassLoader@18b4aac2
+        System.out.println("This Class Loader : " + thisClassLoader);
+
+        Class clazz = Class.forName("com.nameless.clazzloader.DiffVersionService",true,thisClassLoader);
+        Object obj = clazz.newInstance();
+        Method method = clazz.getMethod("getListBySth",new Class[]{String.class});
+        //Reflection.getCallerClass();
+        Object r = method.invoke(obj,new Object[]{""});
+        System.out.println(r);
+        System.out.println(clazz.getName());
+
+    }
+
+    /**
+     * 测试子this.getClass().getClassLoader().addURL后，子URLClassLoader.addURL能不能Class.forName(...).
+     *
+     * AppClassLoader extends URLClassLoader , CloassLoader.getSystemClassLoader() 返回了 AppClassLoader
+     *
+     * 在 AppClassLoader 中注册的jar文件，在父Loader(extClassLoader, bootClassLoader中是找不到的。)
+     *
+     * 所以 tomcat 启动有自己的classLoader，加载 hibernate*.jar的是另一个子ClassLoader,
+     * 在Tomcat环境中，可能是找不到应用中的类的。因为应用的ClassLoader是Tomcat.ClassLoader的子Loader
+     */
+    @Test
+    public void testSubLoadJars() throws Exception {
+
+        ClassLoader urlClassLoader = URLClassLoader.getSystemClassLoader();
+        System.out.println("系统类装载器:" + urlClassLoader);
+        ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+        System.out.println("系统类装载器:" + systemClassLoader);
+        ClassLoader extClassLoader = systemClassLoader.getParent();
+        System.out.println("系统类装载器的父类加载器——扩展类加载器:" + extClassLoader);
+        ClassLoader bootClassLoader = extClassLoader.getParent();
+        System.out.println("扩展类加载器的父类加载器——引导类加载器:" + bootClassLoader);
+
+        Method addURL = URLClassLoader.class.getDeclaredMethod("addURL",new Class[]{ URL.class });
+        addURL.setAccessible(true);
+
+        // systemClassLoader 改成 extClassLoader 就可以加载到了
+        addURL.invoke(systemClassLoader,
+                new Object[]{
+                        new File("D:/workspace/simple-tools/jvm-tester/resources/jars/DIFF-2.0-SNAPSHOT.jar").toURI().toURL()});
+
+        Class clazz = Class.forName("com.nameless.clazzloader.DiffVersionService",true,extClassLoader);
+        Object obj = clazz.newInstance();
+        Method method = clazz.getMethod("getListBySth",new Class[]{String.class});
+        //Reflection.getCallerClass();
+        Object r = method.invoke(obj,new Object[]{""});
+        System.out.println(r);
+        System.out.println(clazz.getName());
     }
 
 }
