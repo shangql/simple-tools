@@ -163,4 +163,26 @@ public class DiffJarsLoaderTest {
         System.out.println(clazz.getName());
     }
 
+
+    private static class MyClassLoader extends URLClassLoader {
+        public MyClassLoader(URL[] urls, ClassLoader parent) {
+            super(urls, parent);
+        }
+    }
+    @Test
+    public void testListClassLoaderUrls(){
+        /**
+         *
+         * 如何获取当前ClassLoader已经加载的Class
+         * 设置当前线程的ClassLoader
+         * Thread.currentThread().setContextClassLoader(WebappLoader.class.getClassLoader());
+         *
+         *
+         */
+        ClassLoader myClassLoader = new MyClassLoader(new URL[0], ClassLoader.getSystemClassLoader());
+        System.out.println(myClassLoader);
+        Thread.currentThread().setContextClassLoader(myClassLoader);
+        System.out.println(Thread.currentThread().getContextClassLoader());
+    }
+
 }
