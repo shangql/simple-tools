@@ -65,6 +65,9 @@ public class DiffJarsLoaderTest {
     @Test
     public void testLoadJars() throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
 
+        /**
+         * 将 protected addURL 方法设置为再外部可以调用。
+         */
         Method addURL = URLClassLoader.class.getDeclaredMethod("addURL",new Class[]{ URL.class });
         addURL.setAccessible(true);
 
@@ -111,6 +114,7 @@ public class DiffJarsLoaderTest {
 
 
         ClassLoader thisClassLoader = this.getClass().getClassLoader();
+        thisClassLoader = URLClassLoader.getSystemClassLoader();
         //This Class Loader : sun.misc.Launcher$AppClassLoader@18b4aac2
         System.out.println("This Class Loader : " + thisClassLoader);
 
