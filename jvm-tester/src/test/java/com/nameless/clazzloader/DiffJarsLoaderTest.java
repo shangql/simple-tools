@@ -189,4 +189,33 @@ public class DiffJarsLoaderTest {
         System.out.println(Thread.currentThread().getContextClassLoader());
     }
 
+
+    /**
+     * 利用构造函数加载jar文件到ClassLoader
+     * @throws MalformedURLException
+     * @throws ClassNotFoundException
+     * @throws NoSuchMethodException
+     * @throws IllegalAccessException
+     * @throws InstantiationException
+     * @throws InvocationTargetException
+     */
+    @Test
+    public void testLoadJarsByConstructs() throws MalformedURLException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
+        String path = "D:/workspace/simple-tools/jvm-tester/resources/jars/DIFF-2.0-SNAPSHOT.jar";
+        URL url = new File(path).toURI().toURL();
+        ClassLoader parentClassLoader = Thread.currentThread().getContextClassLoader();
+        /**
+         * 生成 chindClassLoader 装如 url
+         */
+        URLClassLoader childClassLoader = new URLClassLoader(new URL[]{url},parentClassLoader);
+        /**
+         * the same as
+         *     Class.forName("com.nameless.clazzloader.DiffVersionService",true,childClassLoader)
+         */
+        Class<?> clazz = childClassLoader.loadClass("com.nameless.clazzloader.DiffVersionService");
+        Method method = clazz.getMethod("getListBySth",new Class[]{String.class});
+        Object r = method.invoke(clazz.newInstance(),new Object[]{""});
+        System.out.println(r);
+    }
+
 }
