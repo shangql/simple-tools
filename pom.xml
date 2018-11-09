@@ -12,6 +12,7 @@
         <module>block-chain</module>
         <module>jvm-tester</module>
         <module>leetcode</module>
+        <module>apache-commons-case</module>
     </modules>
     <packaging>pom</packaging>
 
