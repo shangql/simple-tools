@@ -13,6 +13,7 @@
         <module>jvm-tester</module>
         <module>leetcode</module>
         <module>apache-commons-case</module>
+        <module>apache-cxf-case</module>
     </modules>
     <packaging>pom</packaging>
 

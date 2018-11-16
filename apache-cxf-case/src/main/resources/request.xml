@@ -1,0 +1,91 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+    <soap:Header/>
+    <soap:Body>
+        <glob:ServiceOrderBundleMaintainRequest_sync>
+            <BasicMessageHeader>
+                <!--Optional:-->
+                <ID schemeID="?" schemeAgencyID="?" schemeAgencySchemeAgencyID="?">?</ID>
+                <!--Optional:-->
+                <UUID schemeID="?" schemeAgencyID="?">?</UUID>
+                <!--Optional:-->
+                <ReferenceID schemeID="?" schemeAgencyID="?" schemeAgencySchemeAgencyID="?">?</ReferenceID>
+                <!--Optional:-->
+                <ReferenceUUID schemeID="?" schemeAgencyID="?">?</ReferenceUUID>
+            </BasicMessageHeader>
+            <!--1 or more repetitions:-->
+            <BasicMessageHeader/>
+            <ServiceOrder>
+                <Name languageCode="EN">test_demo</Name>
+                <BuyerID>DEMO BUYER</BuyerID>
+                <DateTime>2016-05-26T08:28:40Z</DateTime>
+                <SalesUnitParty>
+                    <PartyID>MC45000</PartyID>
+                </SalesUnitParty>
+                <BuyerParty>
+                    <PartyID>MC9785</PartyID>
+                </BuyerParty>
+                <PricingTerms>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <GrossAmountIndicator>false</GrossAmountIndicator>
+                </PricingTerms>
+                <RequestInitialReceiptTimePoint>
+                    <DateTime>2016-05-23T08:28:40Z</DateTime>
+                </RequestInitialReceiptTimePoint>
+                <RequestedFulfillmentPeriodPeriodTerms>
+                    <StartDateTime>2016-05-30T08:28:40Z</StartDateTime>
+                </RequestedFulfillmentPeriodPeriodTerms>
+                <SalesAndServiceBusinessArea>
+                    <DistributionChannelCode>02</DistributionChannelCode>
+                </SalesAndServiceBusinessArea>
+                <ServiceReferenceObject>
+                    <MainIndicator>true</MainIndicator>
+                    <RegisteredProductKey>
+                        <ProductID>MCF-0040-01</ProductID>
+                    </RegisteredProductKey>
+                </ServiceReferenceObject>
+                <DeliveryTerms>
+                    <DeliveryPriorityCode>7</DeliveryPriorityCode>
+                    <Incoterms>
+                        <ClassificationCode>CIF</ClassificationCode>
+                        <TransferLocationName>NewYork</TransferLocationName>
+                    </Incoterms>
+                </DeliveryTerms>
+                <Item>
+                    <ProcessingTypeCode>SVP1</ProcessingTypeCode>
+                    <Description languageCode="EN">HQ test</Description>
+                    <MigrationListPrice currencyCode="   ">100.0</MigrationListPrice>
+                    <ItemProduct>
+                        <ProductInternalID>MCD-0471</ProductInternalID>
+                        <ProductTypeCode>2</ProductTypeCode>
+                        <UnitOfMeasure>HUR</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="HUR">5.0</Quantity>
+                    <ItemTextCollection>
+                        <Text>
+                            <TypeCode>10011</TypeCode>
+                            <ContentText>Internal</ContentText>
+                        </Text>
+                        <Text>
+                            <TypeCode>10024</TypeCode>
+                            <ContentText>Customer Info</ContentText>
+                        </Text>
+                    </ItemTextCollection>
+                    <RequestedFulfilmentItemPeriod>
+                        <StartDateTime timeZoneCode="GMTUK">2016-05-29T08:28:40Z</StartDateTime>
+                    </RequestedFulfilmentItemPeriod>
+                </Item>
+                <TextCollection>
+                    <Text>
+                        <TypeCode>10011</TypeCode>
+                        <ContentText>test for internal</ContentText>
+                    </Text>
+                    <Text>
+                        <TypeCode>10006</TypeCode>
+                        <ContentText>Test for incident</ContentText>
+                    </Text>
+                </TextCollection>
+                <CashDiscountTermsCode>1003</CashDiscountTermsCode>
+            </ServiceOrder>
+        </glob:ServiceOrderBundleMaintainRequest_sync>
+    </soap:Body>
+</soap:Envelope>

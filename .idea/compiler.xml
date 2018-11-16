@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apache-commons-case" />
+        <module name="apache-cxf-case" />
         <module name="block-chain" />
         <module name="jvm-tester" />
         <module name="leetcode" />
@@ -17,6 +18,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="apache-commons-case" target="1.7" />
+      <module name="apache-cxf-case" target="1.8" />
       <module name="block-chain" target="1.7" />
       <module name="jvm-tester" target="1.7" />
       <module name="leetcode" target="1.7" />
