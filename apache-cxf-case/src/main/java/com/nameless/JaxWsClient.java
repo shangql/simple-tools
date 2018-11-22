@@ -21,6 +21,11 @@ public class JaxWsClient {
 
     public static void main(String[] args) throws StandardFaultMessage {
 
+
+        String username = System.getProperty("username");
+        String password = System.getProperty("password");
+        System.out.println(String.format("username=%s,password=%s.",username,password));
+
         /**
          * 如果 classpath:cxf.xml / classpath:META-INF/cxf.xml
          * 存在蔡荣如下方式创建.
@@ -31,6 +36,8 @@ public class JaxWsClient {
         JaxWsProxyFactoryBean clientFactory = new JaxWsProxyFactoryBean();
         clientFactory.setAddress(END_POINT);
         clientFactory.setServiceClass(ManageServiceOrderIn.class);
+        clientFactory.setUsername(username);
+        clientFactory.setPassword(password);
 
 
         ManageServiceOrderIn manageServiceOrderIn = (ManageServiceOrderIn) clientFactory.create();
