@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <glob:ServiceOrderBundleMaintainRequest_sync>
+            <BasicMessageHeader/>
+            <ServiceOrder>
+                <Name languageCode="EN">VK135马达上海20181205主题-muller</Name>
+                <BuyerID>RPB181205CC0072</BuyerID>
+                <SalesUnitParty>
+                    <PartyID>A-KS-R6-SH0303CD11</PartyID>
+                </SalesUnitParty>
+                <DateTime>2018-12-05T16:14:20Z</DateTime>
+                <BuyerParty>
+                    <PartyID>SV009</PartyID>
+                </BuyerParty>
+
+                <InvoiceTerms actionCode="01">
+                    <ProposedInvoiceDate>2018-12-05</ProposedInvoiceDate>
+                    <InvoicingBlockingReasonCode>01</InvoicingBlockingReasonCode>
+                </InvoiceTerms>
+
+                <Item>
+                    <ID>10</ID>
+                    <ItemProduct>
+                        <ProductID>60631</ProductID>
+                    </ItemProduct>
+                    <Quantity unitCode="HUR">5.0</Quantity>
+                </Item>
+                <Item>
+                    <ID>20</ID>
+                    <ItemProduct>
+                        <ProductID>60631</ProductID>
+                    </ItemProduct>
+                    <Quantity unitCode="HUR">1.0</Quantity>
+                </Item>
+
+            </ServiceOrder>
+        </glob:ServiceOrderBundleMaintainRequest_sync>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,31 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header/>
+    <soap-env:Body>
+        <n0:ServiceOrderBundleMaintainConfirmation_sync xmlns:n0="http://sap.com/xi/SAPGlobal20/Global"
+                                                        xmlns:prx="urn:sap.com:proxy:LOU:/1SAI/TAE735F216FA2EBB96040B1:804">
+            <Log>
+                <MaximumLogItemSeverityCode>3</MaximumLogItemSeverityCode>
+                <Item>
+                    <TypeID>017(/CL_CDA_ORGPT/)</TypeID>
+                    <CategoryCode>INC.BOI</CategoryCode>
+                    <SeverityCode>2</SeverityCode>
+                    <Note>6 additional sales areas exist for organizational unit A-KS-R6-SH0303CD11
+                        (A-KS-上海总部-营运部-售后服务部)
+                    </Note>
+                </Item>
+                <Item>
+                    <TypeID>093(/CL_CDA_BUSDT/)</TypeID>
+                    <CategoryCode>ENV.CBM</CategoryCode>
+                    <SeverityCode>2</SeverityCode>
+                    <Note>Document blocked for invoicing</Note>
+                </Item>
+                <Item>
+                    <TypeID>001(/YNIIVJHSY_A7CEF899DE/)</TypeID>
+                    <CategoryCode>INC.BOI</CategoryCode>
+                    <SeverityCode>3</SeverityCode>
+                    <Note>请填写发票类型</Note>
+                </Item>
+            </Log>
+        </n0:ServiceOrderBundleMaintainConfirmation_sync>
+    </soap-env:Body>
+</soap-env:Envelope>
