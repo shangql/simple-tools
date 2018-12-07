@@ -32,7 +32,13 @@
                     </ItemProduct>
                     <Quantity unitCode="HUR">1.0</Quantity>
                 </Item>
-                <SerInvoiceTypeCI>102</SerInvoiceTypeCI>
+
+                <n1:SerInvoiceTypeCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">102</n1:SerInvoiceTypeCI>
+                <n1:SerProductRecipientEMail xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">+86 15840058479
+                </n1:SerProductRecipientEMail>
+
+
+
             </ServiceOrder>
         </glob:ServiceOrderBundleMaintainRequest_sync>
     </soapenv:Body>

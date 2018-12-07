@@ -23,7 +23,7 @@
                     <TypeID>001(/YNIIVJHSY_A7CEF899DE/)</TypeID>
                     <CategoryCode>INC.BOI</CategoryCode>
                     <SeverityCode>3</SeverityCode>
-                    <Note>请填写发票类型</Note>
+                    <Note>请填写客户手机号码</Note>
                 </Item>
             </Log>
         </n0:ServiceOrderBundleMaintainConfirmation_sync>
