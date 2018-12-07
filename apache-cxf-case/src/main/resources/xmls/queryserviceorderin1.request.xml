@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:glob="http://sap.com/xi/SAPGlobal20/Global"
+                  xmlns:y62="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                  xmlns:yni="http://0001092235-one-off.sap.com/YNIIVJHSY_">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <n0:ServiceOrderByElementsQuery_SYNC xmlns:n0="http://sap.com/xi/SAPGlobal20/Global">
+            <ServiceOrderSelectionByElements>
+                <SelectionByID>
+                    <InclusionExclusionCode>I</InclusionExclusionCode>
+                    <IntervalBoundaryTypeCode>1</IntervalBoundaryTypeCode>
+                    <LowerBoundaryID>4358</LowerBoundaryID>
+                </SelectionByID>
+            </ServiceOrderSelectionByElements>
+        </n0:ServiceOrderByElementsQuery_SYNC>
+    </soapenv:Body>
+</soapenv:Envelope>

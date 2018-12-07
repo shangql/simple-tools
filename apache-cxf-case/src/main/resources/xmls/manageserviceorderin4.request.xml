@@ -1,4 +1,5 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:glob="http://sap.com/xi/SAPGlobal20/Global">
     <soapenv:Header/>
     <soapenv:Body>
         <glob:ServiceOrderBundleMaintainRequest_sync>
@@ -13,12 +14,10 @@
                 <BuyerParty>
                     <PartyID>SV009</PartyID>
                 </BuyerParty>
-
                 <InvoiceTerms actionCode="01">
                     <ProposedInvoiceDate>2018-12-05</ProposedInvoiceDate>
                     <InvoicingBlockingReasonCode>01</InvoicingBlockingReasonCode>
                 </InvoiceTerms>
-
                 <Item>
                     <ID>10</ID>
                     <ItemProduct>
@@ -33,7 +32,7 @@
                     </ItemProduct>
                     <Quantity unitCode="HUR">1.0</Quantity>
                 </Item>
-
+                <SerInvoiceTypeCI>102</SerInvoiceTypeCI>
             </ServiceOrder>
         </glob:ServiceOrderBundleMaintainRequest_sync>
     </soapenv:Body>

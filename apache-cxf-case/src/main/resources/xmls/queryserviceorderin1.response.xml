@@ -1,0 +1,312 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header/>
+    <soap-env:Body>
+        <n0:ServiceOrderByElementsResponse_synC xmlns:n0="http://sap.com/xi/SAPGlobal20/Global"
+                                                xmlns:prx="urn:sap.com:proxy:LOU:/1SAI/TAS217C0284A68B305A5DA6:804">
+            <ServiceOrder>
+                <ID>4358</ID>
+                <UUID>00163e70-e2e7-1ed8-be8d-a553a8ee0a26</UUID>
+                <PostingDate>2018-12-05T09:07:18Z</PostingDate>
+                <Name languageCode="ZH">主题-135马达-沈阳-20181205-170900</Name>
+                <DataOriginTypeCode>1</DataOriginTypeCode>
+                <ServiceConfirmationCreationCode>3</ServiceConfirmationCreationCode>
+                <Item>
+                    <ID>10</ID>
+                    <ProcessingTypeCode>SVM4</ProcessingTypeCode>
+                    <PostingDate>2018-12-05T09:07:18Z</PostingDate>
+                    <Description languageCode="ZH">VK135马达</Description>
+                    <FulfilmentPartyCategoryCode>1</FulfilmentPartyCategoryCode>
+                    <ItemProduct>
+                        <ProductID>60631</ProductID>
+                        <ProductInternalID>60631</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <PriceAndTaxCalculationItem>
+                        <Status>
+                            <CalculationStatusCode>2</CalculationStatusCode>
+                        </Status>
+                        <CountryCode>CN</CountryCode>
+                        <TaxationCharacteristicsCode listID="CN"></TaxationCharacteristicsCode>
+                        <TaxationCharacteristicsDeterminationMethodCode>2
+                        </TaxationCharacteristicsDeterminationMethodCode>
+                    </PriceAndTaxCalculationItem>
+                    <UUID>00163e70-e2e7-1ed8-be8d-b682099c8a92</UUID>
+                </Item>
+                <Item>
+                    <ID>20</ID>
+                    <ProcessingTypeCode>SVM4</ProcessingTypeCode>
+                    <PostingDate>2018-12-05T09:07:18Z</PostingDate>
+                    <Description languageCode="ZH">VK135线路板</Description>
+                    <FulfilmentPartyCategoryCode>1</FulfilmentPartyCategoryCode>
+                    <ItemProduct>
+                        <ProductID>40180</ProductID>
+                        <ProductInternalID>40180</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <PriceAndTaxCalculationItem>
+                        <Status>
+                            <CalculationStatusCode>2</CalculationStatusCode>
+                        </Status>
+                        <CountryCode>CN</CountryCode>
+                        <TaxationCharacteristicsCode listID="CN"></TaxationCharacteristicsCode>
+                        <TaxationCharacteristicsDeterminationMethodCode>2
+                        </TaxationCharacteristicsDeterminationMethodCode>
+                    </PriceAndTaxCalculationItem>
+                    <UUID>00163e70-e2e7-1ed8-be8d-b82e51658a92</UUID>
+                </Item>
+                <Status>
+                    <PaymentAuthorisationStatusCode>4</PaymentAuthorisationStatusCode>
+                    <ItemListCancellationStatusCode>1</ItemListCancellationStatusCode>
+                    <ItemListCustomerOrderLifeCycleStatusCode>4</ItemListCustomerOrderLifeCycleStatusCode>
+                    <ItemListFulfilmentProcessingStatusCode>1</ItemListFulfilmentProcessingStatusCode>
+                    <ItemListPlanningReleaseStatusCode>1</ItemListPlanningReleaseStatusCode>
+                    <ItemListExecutionReleaseStatusCode>1</ItemListExecutionReleaseStatusCode>
+                    <ConfirmationIssuingStatusCode>1</ConfirmationIssuingStatusCode>
+                    <ItemListInvoiceProcessingStatusCode>4</ItemListInvoiceProcessingStatusCode>
+                    <ItemListProductAvailabilityConfirmationStatusCode>1
+                    </ItemListProductAvailabilityConfirmationStatusCode>
+                    <ConsistencyStatusCode>3</ConsistencyStatusCode>
+                    <GeneralDataCompletenessStatusCode>3</GeneralDataCompletenessStatusCode>
+                    <InvoicingBlockingStatusCode>1</InvoicingBlockingStatusCode>
+                    <FulfilmentBlockingStatusCode>1</FulfilmentBlockingStatusCode>
+                    <ReleaseStatusCode>1</ReleaseStatusCode>
+                </Status>
+                <ProcessingTypeCode>SRVO</ProcessingTypeCode>
+                <TypeCode>117</TypeCode>
+                <DurationTerms>
+                    <DurationRoleCode>18</DurationRoleCode>
+                    <Duration>P2D</Duration>
+                </DurationTerms>
+                <DurationTerms>
+                    <DurationRoleCode>34</DurationRoleCode>
+                    <Duration>P2D</Duration>
+                </DurationTerms>
+                <DurationTerms>
+                    <DurationRoleCode>35</DurationRoleCode>
+                    <Duration>PT12H</Duration>
+                </DurationTerms>
+                <DurationTerms>
+                    <DurationRoleCode>83</DurationRoleCode>
+                    <Duration>P1DT12H</Duration>
+                </DurationTerms>
+                <IncidentServiceCategory>
+                    <ID>00163E70E2E71ED8BE8DA553A8EE0A2600163E70E2E71ED8BE8DB22E3D48CA2B</ID>
+                    <ServiceIssueCategoryCatalogueKey>
+                        <ServiceIssueCategoryCatalogueID>ID_1</ServiceIssueCategoryCatalogueID>
+                        <ServiceIssueCategoryCatalogueVersionID></ServiceIssueCategoryCatalogueVersionID>
+                    </ServiceIssueCategoryCatalogueKey>
+                    <ServiceIssueCategoryCatalogueCategoryKey>
+                        <ServiceIssueCategoryID>VK13506</ServiceIssueCategoryID>
+                        <ServiceIssueCategoryCatalogueUUID>00163e25-ec8b-1ee8-89b7-d5f2768d312b
+                        </ServiceIssueCategoryCatalogueUUID>
+                    </ServiceIssueCategoryCatalogueCategoryKey>
+                    <ServiceIssueCategoryUUID>00163e25-ec8b-1ee8-89b7-d682ca9dd12c</ServiceIssueCategoryUUID>
+                    <MainIndicator>true</MainIndicator>
+                </IncidentServiceCategory>
+                <PeriodTerms>
+                    <PeriodRoleCode>43</PeriodRoleCode>
+                    <TimePointPeriod>
+                        <IntervalBoundaryTypeCode></IntervalBoundaryTypeCode>
+                        <StartTimePoint>
+                            <TypeCode>5</TypeCode>
+                            <DateTime timeZoneCode="UTC+8">2018-12-06T16:00:00Z</DateTime>
+                        </StartTimePoint>
+                        <EndTimePoint>
+                            <TypeCode>5</TypeCode>
+                            <DateTime timeZoneCode="UTC+8">2018-12-07T16:00:00Z</DateTime>
+                        </EndTimePoint>
+                    </TimePointPeriod>
+                    <StartTimePointDateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>16</DateCalculationFunctionCode>
+                    </StartTimePointDateCalculationFunctionReference>
+                    <EndTimePointDateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>17</DateCalculationFunctionCode>
+                    </EndTimePointDateCalculationFunctionReference>
+                </PeriodTerms>
+                <ServiceReferenceObject>
+                    <ID>00163E70E2E71ED8BE8DA553A8EE0A2600163E70E2E71ED8BE8DA553A8EECA26</ID>
+                    <MainIndicator>true</MainIndicator>
+                </ServiceReferenceObject>
+                <ServiceTerms>
+                    <ServicePriorityCode>3</ServicePriorityCode>
+                    <ServiceProvisionLocationTypeCode>1</ServiceProvisionLocationTypeCode>
+                    <ServiceIssueCategoryCatalogueKey>
+                        <ServiceIssueCategoryCatalogueID>ID_1</ServiceIssueCategoryCatalogueID>
+                        <ServiceIssueCategoryCatalogueVersionID></ServiceIssueCategoryCatalogueVersionID>
+                    </ServiceIssueCategoryCatalogueKey>
+                    <ServiceIssueCategoryCatalogueCategoryKey>
+                        <ServiceIssueCategoryID>VK135</ServiceIssueCategoryID>
+                        <ServiceIssueCategoryCatalogueUUID>00163e25-ec8b-1ee8-89b7-d5f2768d312b
+                        </ServiceIssueCategoryCatalogueUUID>
+                    </ServiceIssueCategoryCatalogueCategoryKey>
+                    <ServiceIssueCategoryUUID>00163e25-ec8b-1ee8-89b7-d6107775312b</ServiceIssueCategoryUUID>
+                </ServiceTerms>
+                <ServicePointLocation>
+                    <AddressReference>
+                        <AddressHostUUID>00163e70-e2e7-1ed8-be8d-a743e835aa27</AddressHostUUID>
+                        <AddressHostTypeCode>9</AddressHostTypeCode>
+                        <BusinessObjectTypeCode>147</BusinessObjectTypeCode>
+                        <PartyKey>
+                            <PartyTypeCode>147</PartyTypeCode>
+                            <PartyID>SV009</PartyID>
+                        </PartyKey>
+                    </AddressReference>
+                    <RoleCode>8</RoleCode>
+                    <RoleCategoryCode>8</RoleCategoryCode>
+                    <DeterminationMethodCode>4</DeterminationMethodCode>
+                </ServicePointLocation>
+                <ServiceAndSupportParty>
+                    <PartyKey>
+                        <PartyTypeCode>410</PartyTypeCode>
+                        <PartyID>A-KS-R6-SH0303CD11</PartyID>
+                    </PartyKey>
+                    <PartyUUID>00163e09-300d-1ed6-84ee-fdec9a9a6337</PartyUUID>
+                    <RoleCategoryCode>28</RoleCategoryCode>
+                    <RoleCode>28</RoleCode>
+                    <AddressReference>
+                        <AddressHostUUID>00163e09-300d-1ee6-85d3-837c9fec12fd</AddressHostUUID>
+                        <AddressHostTypeCode>9</AddressHostTypeCode>
+                    </AddressReference>
+                    <DeterminationMethodCode>8</DeterminationMethodCode>
+                    <MainIndicator>true</MainIndicator>
+                </ServiceAndSupportParty>
+                <ProcessorParty>
+                    <PartyKey>
+                        <PartyTypeCode>167</PartyTypeCode>
+                        <PartyID>8000000210</PartyID>
+                    </PartyKey>
+                    <PartyUUID>00163e09-3011-1ee6-889b-e0388806e18f</PartyUUID>
+                    <RoleCategoryCode>40</RoleCategoryCode>
+                    <RoleCode>40</RoleCode>
+                    <AddressReference>
+                        <AddressHostUUID>00163e25-e8f2-1ee7-a1c3-240af0e67835</AddressHostUUID>
+                        <AddressHostTypeCode>9</AddressHostTypeCode>
+                    </AddressReference>
+                    <DeterminationMethodCode>1</DeterminationMethodCode>
+                    <MainIndicator>true</MainIndicator>
+                </ProcessorParty>
+                <SalesUnitParty>
+                    <PartyKey>
+                        <PartyTypeCode>410</PartyTypeCode>
+                        <PartyID>A-KS-R6-SH0303CD11</PartyID>
+                    </PartyKey>
+                    <PartyUUID>00163e09-300d-1ed6-84ee-fdec9a9a6337</PartyUUID>
+                    <RoleCategoryCode>44</RoleCategoryCode>
+                    <RoleCode>44</RoleCode>
+                    <AddressReference>
+                        <AddressHostUUID>00163e09-300d-1ee6-85d3-837c9fec12fd</AddressHostUUID>
+                        <AddressHostTypeCode>9</AddressHostTypeCode>
+                    </AddressReference>
+                    <DeterminationMethodCode>4</DeterminationMethodCode>
+                    <MainIndicator>true</MainIndicator>
+                </SalesUnitParty>
+                <BuyerParty>
+                    <PartyKey>
+                        <PartyTypeCode>159</PartyTypeCode>
+                        <PartyID>SV009</PartyID>
+                    </PartyKey>
+                    <PartyUUID>00163e09-3011-1ee6-8dd2-9160100e2328</PartyUUID>
+                    <RoleCategoryCode>1</RoleCategoryCode>
+                    <RoleCode>1001</RoleCode>
+                    <AddressReference>
+                        <AddressHostUUID>00163e70-e2e7-1ed8-be8d-a743e835aa27</AddressHostUUID>
+                        <AddressHostTypeCode>9</AddressHostTypeCode>
+                    </AddressReference>
+                    <DeterminationMethodCode>1</DeterminationMethodCode>
+                    <MainIndicator>true</MainIndicator>
+                </BuyerParty>
+                <RequestedFullfilmentPeriodTerms>
+                    <TimePointRoleCode>43</TimePointRoleCode>
+                    <TimePoint>
+                        <TypeCode>5</TypeCode>
+                        <DateTime timeZoneCode="UTC+8">2018-12-06T16:00:00Z</DateTime>
+                    </TimePoint>
+                    <DateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>16</DateCalculationFunctionCode>
+                    </DateCalculationFunctionReference>
+                </RequestedFullfilmentPeriodTerms>
+                <CompletionDueTimePointTerms>
+                    <TimePointRoleCode>80</TimePointRoleCode>
+                    <TimePoint>
+                        <TypeCode>5</TypeCode>
+                        <DateTime timeZoneCode="UTC+8">2018-12-07T09:07:18Z</DateTime>
+                    </TimePoint>
+                    <DateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>30</DateCalculationFunctionCode>
+                    </DateCalculationFunctionReference>
+                </CompletionDueTimePointTerms>
+                <FirstReactionDueTimePointTerms>
+                    <TimePointRoleCode>84</TimePointRoleCode>
+                    <TimePoint>
+                        <TypeCode>5</TypeCode>
+                        <DateTime timeZoneCode="UTC+8">2018-12-05T21:07:18Z</DateTime>
+                    </TimePoint>
+                    <DateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>20</DateCalculationFunctionCode>
+                    </DateCalculationFunctionReference>
+                </FirstReactionDueTimePointTerms>
+                <RequestInitialReceiptTimePointTerms>
+                    <TimePointRoleCode>98</TimePointRoleCode>
+                    <TimePoint>
+                        <TypeCode>5</TypeCode>
+                        <DateTime timeZoneCode="UTC+8">2018-12-05T09:07:18Z</DateTime>
+                    </TimePoint>
+                    <DateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>9</DateCalculationFunctionCode>
+                    </DateCalculationFunctionReference>
+                </RequestInitialReceiptTimePointTerms>
+                <PlannedArrivalAtCustomerTimePointTerms>
+                    <TimePointRoleCode>179</TimePointRoleCode>
+                    <TimePoint>
+                        <TypeCode>5</TypeCode>
+                        <DateTime timeZoneCode="UTC+8">2018-12-06T21:07:18Z</DateTime>
+                    </TimePoint>
+                    <DateCalculationFunctionReference>
+                        <DateCalculationFunctionGroupCode></DateCalculationFunctionGroupCode>
+                        <DateCalculationFunctionCode>60</DateCalculationFunctionCode>
+                    </DateCalculationFunctionReference>
+                </PlannedArrivalAtCustomerTimePointTerms>
+                <n1:SerInvoiceTypeCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">102</n1:SerInvoiceTypeCI>
+                <n1:SerInvoiceCustomerNameCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">发票客户名称
+                </n1:SerInvoiceCustomerNameCI>
+                <n1:SerInvoiceCustomerTaxNumberCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">发票客户税号
+                </n1:SerInvoiceCustomerTaxNumberCI>
+                <n1:SerInvoiceCustomerAddressTelCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">发票客户地址电话
+                </n1:SerInvoiceCustomerAddressTelCI>
+                <n1:SerCustomerBankAccountCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">客户银行及账号
+                </n1:SerCustomerBankAccountCI>
+                <n1:SerDrawerCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">开票人</n1:SerDrawerCI>
+                <n1:SerBillingContentCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">开票内容
+                </n1:SerBillingContentCI>
+                <n1:SerTypeofShippingCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">2
+                </n1:SerTypeofShippingCI>
+                <n1:SerSalesPlatformCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">02
+                </n1:SerSalesPlatformCI>
+                <n1:SerBillingAddressCI xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">送票地址
+                </n1:SerBillingAddressCI>
+                <n1:SerCISalesDBOrderNo xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">销售订单号
+                </n1:SerCISalesDBOrderNo>
+                <n1:SerCISalesOrderType xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">销售订单类型
+                </n1:SerCISalesOrderType>
+                <n1:SerCICompanyOfFrontEndOrder xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">前端订单所属公司
+                </n1:SerCICompanyOfFrontEndOrder>
+                <n1:SerCINoteOfFrontEndOrder xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">前端平台订单备注
+                </n1:SerCINoteOfFrontEndOrder>
+                <n1:SerProductRecipientEMail xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">+86 15840058479
+                </n1:SerProductRecipientEMail>
+                <n1:SerOrderDate xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_">2018-12-05</n1:SerOrderDate>
+            </ServiceOrder>
+            <ProcessingConditions>
+                <ReturnedQueryHitsNumberValue>1</ReturnedQueryHitsNumberValue>
+                <MoreHitsAvailableIndicator>false</MoreHitsAvailableIndicator>
+                <LastReturnedObjectID>00163E70E2E71ED8BE8DA553A8EE0A26</LastReturnedObjectID>
+            </ProcessingConditions>
+        </n0:ServiceOrderByElementsResponse_synC>
+    </soap-env:Body>
+</soap-env:Envelope>
