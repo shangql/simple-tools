@@ -23,20 +23,25 @@ public class HttpPostClient {
 
     public static void main(String[] args) throws Exception {
 
+        String method = "manageserviceorderin4";
+
         HttpPostClient httpPostClient = new HttpPostClient();
-        ;
 
         String username = System.getProperty("username");
         String password = System.getProperty("password");
         System.out.println(String.format("username=%s,password=%s.",username,password));
 
-        String queryxml = httpPostClient.file2xml("xmls/queryserviceorderin1.request.xml");
-        String queryrsxml = httpPostClient.doPostQuery(queryxml, String.format("%s:%s",username,password));
-        httpPostClient.xml2file("xmls/queryserviceorderin1.response.xml", queryrsxml);
+        if("queryserviceorderin1".equals(method)) {
+            String queryxml = httpPostClient.file2xml("xmls/queryserviceorderin1.request.xml");
+            String queryrsxml = httpPostClient.doPostQuery(queryxml, String.format("%s:%s", username, password));
+            httpPostClient.xml2file("xmls/queryserviceorderin1.response.xml", queryrsxml);
+        }
 
-        String insertxml = httpPostClient.file2xml("xmls/manageserviceorderin4.request.xml");
-        String insertrsxml = httpPostClient.doPostInsert(insertxml,String.format("%s:%s",username,password));
-        httpPostClient.xml2file("xmls/manageserviceorderin4.response.xml", insertrsxml);
+        if("manageserviceorderin4".equals(method)) {
+            String insertxml = httpPostClient.file2xml("xmls/manageserviceorderin4.request.xml");
+            String insertrsxml = httpPostClient.doPostInsert(insertxml, String.format("%s:%s", username, password));
+            httpPostClient.xml2file("xmls/manageserviceorderin4.response.xml", insertrsxml);
+        }
 
     }
 
