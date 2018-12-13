@@ -123,7 +123,13 @@
                             <wsdlOptions>
                                 <wsdlOption>
                                     <faultSerialVersionUID>1</faultSerialVersionUID>
-                                    <wsdl>${basedir}/src/main/resources/wsdl/project.wsdl</wsdl>
+                                    <wsdl>${basedir}/src/main/resources/wsdl/template/QueryServiceOrderIn.wsdl</wsdl>
+                                    <extraargs>
+                                        <extraarg>-autoNameResolution</extraarg>
+                                        <!--<extraarg>-verbose</extraarg>-->
+                                        <!--<extraarg>-p</extraarg>-->
+                                        <!--<extraarg>com.example.demo.ws</extraarg>-->
+                                    </extraargs>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
@@ -136,59 +142,5 @@
         </plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>server</id>
-            <build>
-                <defaultGoal>test</defaultGoal>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>demo.hw.server.Server</mainClass>
-                                    <arguments>
-                                        <argument>${basedir}/src/main/resources/wsdl/project.wsdl</argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>client</id>
-            <build>
-                <defaultGoal>test</defaultGoal>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>demo.hw.client.Client</mainClass>
-                                    <arguments>
-                                        <argument>${basedir}/src/main/resources/wsdl/project.wsdl</argument>
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
 </project>
