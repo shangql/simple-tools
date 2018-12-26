@@ -209,11 +209,49 @@ public class JaxWsClient1 {
         migrationListPrice.setValue(migrationListPriceValue);
         serviceOrderMaintainRequestItems.setMigrationListPrice(migrationListPrice);
 
-        // Item arr add
+        // ServiceOrder set Item arr add
         serviceOrderMaintainRequest.getItem().add(serviceOrderMaintainRequestItems);
 
+        /**
+         * TextCollection
+         */
+        TextCollection textCollection = new TextCollection();
+        // TextCollection actionCode
+        textCollection.setActionCode("01");
+        // Text arr
+        List<TextCollectionText> textArr = textCollection.getText();
+
+        // Text
+        TextCollectionText text = new TextCollectionText();
+        // Text actionCode
+        text.setActionCode("01");
+        // Text TypeCode
+        TextCollectionTextTypeCode typeCode = new TextCollectionTextTypeCode();
+        typeCode.setValue("10006");
+        // text set Item
+        text.setTypeCode(typeCode);
+
+        // Text ContentText
+        Text contentText = new Text();
+        // Text ContentText languageCode
+        contentText.setLanguageCode("EN");
+        // Text ContentText value
+        contentText.setValue("RVK181128CC0023 王延伟 15524595995 长春维修网点 VK135马达 60631 1 650 560.34 崔高峰");
+        // text set Item
+        text.setContentText(contentText);
+
+        // textArr add Item
+        textArr.add(text);
+
+        // ServiceOrder set Item arr add
+        serviceOrderMaintainRequest.setTextCollection(textCollection);
 
 
+
+
+
+
+        //设置请求
         request.getServiceOrder().add(serviceOrderMaintainRequest);
         request.setBasicMessageHeader(header);
 
