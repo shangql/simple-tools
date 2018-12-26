@@ -377,8 +377,8 @@
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD135916BE801AF"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1439FEDE9226B">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerAddressTelCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD1439FEDE7A26B"/>-->
+                    <xsd:element name="SerInvoiceCustomerAddressTelCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD1439FEDE7A26B"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1439FEDE9226B"/>
@@ -438,8 +438,8 @@
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1E42F17BBA543"/>
             <xsd:group name="Ext00163E70E4881EE8BFD215E930FD6609">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerTaxNumberCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD215E930FBE609"/>-->
+                    <xsd:element name="SerInvoiceCustomerTaxNumberCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD215E930FBE609"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD215E930FD6609"/>
@@ -452,8 +452,8 @@
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD2180BB1B2C60A"/>
             <xsd:group name="Ext00163E70E4881EE8BFD2737E5B2C4793">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerNameCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD2737E5B2AC793"/>-->
+                    <xsd:element name="SerInvoiceCustomerNameCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD2737E5B2AC793"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD2737E5B2C4793"/>
@@ -473,7 +473,7 @@
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD27C9D3C3F87E6"/>
             <xsd:group name="Ext00163E70E4881EE8BFD2BB0EF778A8CB">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceTypeCI" minOccurs="0" form="qualified" type="ServiceTypeCode"/>-->
+                    <xsd:element name="SerInvoiceTypeCI" minOccurs="0" form="qualified" type="ServiceTypeCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD2BB0EF778A8CB"/>
