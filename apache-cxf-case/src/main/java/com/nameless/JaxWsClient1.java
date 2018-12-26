@@ -1,11 +1,9 @@
 package com.nameless;
 
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.sap.xi.a1s.global.*;
+import com.sap.xi.a1s.global.QueryServiceOrderIn;
 import com.sap.xi.a1s.global.StandardFaultMessage;
 import com.sap.xi.ap.common.gdt.*;
 import com.sap.xi.ap.crm.global.*;
@@ -14,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -36,7 +33,8 @@ public class JaxWsClient1 {
     /**
      * END_POINT from SOAPUI
      */
-    private final static String END_POINT = "https://my337109.sapbydesign.com/sap/bc/srt/scs/sap/queryserviceorderin1?sap-vhost=my337109.sapbydesign.com";
+    private final static String END_POINT = "https://my337109.sapbydesign.com/sap/bc/srt/scs/sap/manageserviceorderin4?sap-vhost=my337109.sapbydesign.com";
+
 
 
     public static void main(String[] args) throws StandardFaultMessage, com.sap.xi.ap.crm.global.StandardFaultMessage {
@@ -55,7 +53,7 @@ public class JaxWsClient1 {
          */
         JaxWsProxyFactoryBean clientFactory = new JaxWsProxyFactoryBean();
         clientFactory.setAddress(END_POINT);
-        clientFactory.setServiceClass(QueryServiceOrderIn.class);
+        clientFactory.setServiceClass(ManageServiceOrderIn.class);
         clientFactory.setUsername(username);
         clientFactory.setPassword(password);
 
@@ -74,7 +72,7 @@ public class JaxWsClient1 {
          */
         EXTENDEDName extendedName = new EXTENDEDName();
         extendedName.setLanguageCode("EN");
-        extendedName.setValue("wise程序提交 by ken 2018-12-26 11:14:59");
+        extendedName.setValue("wise程序提交 by ken 2018-12-26 14:01:31");
         // ServiceOrder set
         serviceOrderMaintainRequest.setName(extendedName);
 
@@ -246,9 +244,35 @@ public class JaxWsClient1 {
         // ServiceOrder set Item arr add
         serviceOrderMaintainRequest.setTextCollection(textCollection);
 
+        /**
+         * SerInvoiceTypeCI
+         */
+        serviceOrderMaintainRequest.setSerInvoiceTypeCI("102");
 
+        /**
+         * SerInvoiceCustomerAddressTelCI
+         */
+        serviceOrderMaintainRequest.setSerInvoiceCustomerAddressTelCI("13478225983");
 
+        /**
+         * SerInvoiceCustomerNameCI
+         */
+        serviceOrderMaintainRequest.setSerInvoiceCustomerNameCI("ken");
 
+        /**
+         * SerInvoiceCustomerTaxNumberCI
+         */
+        serviceOrderMaintainRequest.setSerInvoiceCustomerTaxNumberCI("210236584");
+
+        /**
+         * Custom_Service_Category
+         */
+        serviceOrderMaintainRequest.setCustomServiceCategory("VK13519");
+
+        /**
+         * Processor_ID
+         */
+        serviceOrderMaintainRequest.setProcessorID("8000000201");
 
 
         //设置请求
