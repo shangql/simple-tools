@@ -2,12 +2,18 @@
 <wsdl:definitions targetNamespace="http://sap.com/xi/AP/CRM/Global" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
                   xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/"
-                  xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+                  xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
                   xmlns:rfc="urn:sap-com:sap:rfc:functions" xmlns:tns="http://sap.com/xi/AP/CRM/Global"
                   xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
                   xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  xmlns:n1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
+                  xmlns:n2="http://0001092235-one-off.sap.com/Y628OLNKY_"
                   xmlns:n3="http://sap.com/xi/SAPGlobal20/Global" xmlns:n4="http://sap.com/xi/AP/Common/Global"
->
+                  xmlns:n5="http://sap.com/xi/AP/Common/GDT" xmlns:n6="http://sap.com/xi/BASIS/Global"
+                  xmlns:n7="http://sap.com/xi/DocumentServices/Global"
+                  xmlns:n8="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
+                  xmlns:n9="http://sap.com/xi/AP/PDI/ABSL" xmlns:n10="http://sap.com/xi/AP/FO/PaymentCard/Global"
+                  xmlns:n11="http://sap.com/xi/A1S/Global">
     <wsdl:documentation>
         <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
     </wsdl:documentation>
@@ -23,7 +29,10 @@
             <wsp:All>
                 <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
                                      xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy"
-                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility">
+                                     xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                                     xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                                     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
                     <wsp:Policy>
                         <sp:TransportToken>
                             <wsp:Policy>
@@ -50,7 +59,10 @@
             <wsp:All>
                 <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
                                      xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy"
-                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility">
+                                     xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                                     xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                                     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
                     <wsp:Policy>
                         <sp:TransportToken>
                             <wsp:Policy>
@@ -77,7 +89,10 @@
             <wsp:All>
                 <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
                                      xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy"
-                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility">
+                                     xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                                     xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                                     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
                     <wsp:Policy>
                         <sp:TransportToken>
                             <wsp:Policy>
@@ -115,7 +130,10 @@
             <wsp:All>
                 <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
                                      xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy"
-                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility">
+                                     xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                                     xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                                     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
                     <wsp:Policy>
                         <sp:TransportToken>
                             <wsp:Policy>
@@ -142,7 +160,10 @@
             <wsp:All>
                 <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
                                      xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy"
-                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility">
+                                     xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                                     xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                                     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
                     <wsp:Policy>
                         <sp:TransportToken>
                             <wsp:Policy>
@@ -169,7 +190,10 @@
             <wsp:All>
                 <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
                                      xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy"
-                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility">
+                                     xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                                     xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+                                     xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                                     xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
                     <wsp:Policy>
                         <sp:TransportToken>
                             <wsp:Policy>
@@ -232,6 +256,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -343,137 +368,137 @@
             <xsd:attributeGroup name="Ext00163E70E4881ED981E8AE1E7BF662A6"/>
             <xsd:group name="Ext00163E70E4881EE8BFD103DAA1A600B2">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCISalesOrderType" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD103DAA1A480B2"/>-->
+                    <xsd:element name="SerCISalesOrderType" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD103DAA1A480B2"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD103DAA1A600B2"/>
             <xsd:group name="Ext00163E70E4881EE8BFD10AC4785500BC">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCustomerBankAccountCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD10AC4785380BC"/>-->
+                    <xsd:element name="SerCustomerBankAccountCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD10AC4785380BC"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD10AC4785500BC"/>
             <xsd:group name="Ext00163E70E4881EE8BFD115CEAE2C0117">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerBillingContentCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD115CEAE2A8117"/>-->
+                    <xsd:element name="SerBillingContentCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD115CEAE2A8117"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD115CEAE2C0117"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1260B6024E13A">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerBillingAddressCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD1260B6023613A"/>-->
+                    <xsd:element name="SerBillingAddressCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD1260B6023613A"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1260B6024E13A"/>
             <xsd:group name="Ext00163E70E4881EE8BFD135916BE801AF">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerSalesPlatformCI" minOccurs="0" form="qualified" type="SALESPLATFORMCode"/>-->
+                    <xsd:element name="SerSalesPlatformCI" minOccurs="0" form="qualified" type="SALESPLATFORMCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD135916BE801AF"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1439FEDE9226B">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerAddressTelCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD1439FEDE7A26B"/>-->
+                    <xsd:element name="SerInvoiceCustomerAddressTelCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD1439FEDE7A26B"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1439FEDE9226B"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1475CC81A826E">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerOriginalSerialNumber" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD1475CC819426E"/>-->
+                    <xsd:element name="SerOriginalSerialNumber" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD1475CC819426E"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1475CC81A826E"/>
             <xsd:group name="Ext00163E70E4881EE8BFD16F743D728339">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCITypeofShipping" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD16F743D710339"/>-->
+                    <xsd:element name="SerCITypeofShipping" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD16F743D710339"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD16F743D728339"/>
             <xsd:group name="Ext00163E70E4881EE8BFD17291A76B0349">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerSerialNo" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD17291A769C349"/>-->
+                    <xsd:element name="SerSerialNo" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD17291A769C349"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD17291A76B0349"/>
             <xsd:group name="Ext00163E70E4881EE8BFD19039B0CCC3B7">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCISalesPlatform" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD19039B0CB43B7"/>-->
+                    <xsd:element name="SerCISalesPlatform" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD19039B0CB43B7"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD19039B0CCC3B7"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1AA62621C841B">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCINoteOfFrontEndOrder" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD1AA62621B041B"/>-->
+                    <xsd:element name="SerCINoteOfFrontEndOrder" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD1AA62621B041B"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1AA62621C841B"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1C7E477ADA4D8">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCISalesDBOrderNo" minOccurs="0" form="qualified"-->
-                                 <!--type="xi6:BusinessTransactionDocumentID"/>-->
+                    <xsd:element name="SerCISalesDBOrderNo" minOccurs="0" form="qualified"
+                                 type="xi6:BusinessTransactionDocumentID"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1C7E477ADA4D8"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1D1D092A6E4DF">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerTypeofShippingCI" minOccurs="0" form="qualified" type="TYPEOFSHIPPINGCode"/>-->
+                    <xsd:element name="SerTypeofShippingCI" minOccurs="0" form="qualified" type="TYPEOFSHIPPINGCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1D1D092A6E4DF"/>
             <xsd:group name="Ext00163E70E4881EE8BFD1E42F17BBA543">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerOrderDate" minOccurs="0" form="qualified" type="xi6:Date"/>-->
+                    <xsd:element name="SerOrderDate" minOccurs="0" form="qualified" type="xi6:Date"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD1E42F17BBA543"/>
             <xsd:group name="Ext00163E70E4881EE8BFD215E930FD6609">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerTaxNumberCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD215E930FBE609"/>-->
+                    <xsd:element name="SerInvoiceCustomerTaxNumberCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD215E930FBE609"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD215E930FD6609"/>
             <xsd:group name="Ext00163E70E4881EE8BFD2180BB1B2C60A">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerProductRecipientEMail" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD2180BB1B1460A"/>-->
+                    <xsd:element name="SerProductRecipientEMail" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD2180BB1B1460A"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD2180BB1B2C60A"/>
             <xsd:group name="Ext00163E70E4881EE8BFD2737E5B2C4793">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerNameCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD2737E5B2AC793"/>-->
+                    <xsd:element name="SerInvoiceCustomerNameCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD2737E5B2AC793"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD2737E5B2C4793"/>
             <xsd:group name="Ext00163E70E4881EE8BFD27B9B021CC7E6">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCICompanyOfFrontEndOrder" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD27B9B021B47E6"/>-->
+                    <xsd:element name="SerCICompanyOfFrontEndOrder" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD27B9B021B47E6"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD27B9B021CC7E6"/>
             <xsd:group name="Ext00163E70E4881EE8BFD27C9D3C3F87E6">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerDrawerCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E4881EE8BFD27C9D3C3E07E6"/>-->
+                    <xsd:element name="SerDrawerCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E4881EE8BFD27C9D3C3E07E6"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD27C9D3C3F87E6"/>
             <xsd:group name="Ext00163E70E4881EE8BFD2BB0EF778A8CB">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceTypeCI" minOccurs="0" form="qualified" type="ServiceTypeCode"/>-->
+                    <xsd:element name="SerInvoiceTypeCI" minOccurs="0" form="qualified" type="ServiceTypeCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E4881EE8BFD2BB0EF778A8CB"/>
@@ -488,6 +513,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -599,130 +625,130 @@
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBBBD56BA8AEB7"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEBBEF49E83AF03">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCustomerBankAccountCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEBBEF49E822F03"/>-->
+                    <xsd:element name="SerCustomerBankAccountCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEBBEF49E822F03"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBBEF49E83AF03"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEBC64798D2CF0B">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerBillingContentCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEBC64798D14F0B"/>-->
+                    <xsd:element name="SerBillingContentCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEBC64798D14F0B"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBC64798D2CF0B"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEBCE287639CF13">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerBillingAddressCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEBCE2876384F13"/>-->
+                    <xsd:element name="SerBillingAddressCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEBCE2876384F13"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBCE287639CF13"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEBDDCE6ADB2F72">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerSalesPlatformCI" minOccurs="0" form="qualified" type="SALESPLATFORMCode"/>-->
+                    <xsd:element name="SerSalesPlatformCI" minOccurs="0" form="qualified" type="SALESPLATFORMCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBDDCE6ADB2F72"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEBE67324DE0F78">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerAddressTelCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEBE67324DC8F78"/>-->
+                    <xsd:element name="SerInvoiceCustomerAddressTelCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEBE67324DC8F78"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBE67324DE0F78"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEBE8E7B8CA0F83">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerOriginalSerialNumber" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEBE8E7B8C8CF83"/>-->
+                    <xsd:element name="SerOriginalSerialNumber" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEBE8E7B8C8CF83"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEBE8E7B8CA0F83"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC0191649D5091">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCITypeofShipping" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC0191649BD091"/>-->
+                    <xsd:element name="SerCITypeofShipping" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC0191649BD091"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC0191649D5091"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC036EB8003093">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerSerialNo" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC036EB7FEF093"/>-->
+                    <xsd:element name="SerSerialNo" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC036EB7FEF093"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC036EB8003093"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC105172D8B09F">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCISalesPlatform" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC105172D7309F"/>-->
+                    <xsd:element name="SerCISalesPlatform" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC105172D7309F"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC105172D8B09F"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC219A6D9710FC">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCINoteOfFrontEndOrder" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC219A6D9590FC"/>-->
+                    <xsd:element name="SerCINoteOfFrontEndOrder" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC219A6D9590FC"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC219A6D9710FC"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC343C632C315C">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCISalesDBOrderNo" minOccurs="0" form="qualified"-->
-                                 <!--type="xi6:BusinessTransactionDocumentID"/>-->
+                    <xsd:element name="SerCISalesDBOrderNo" minOccurs="0" form="qualified"
+                                 type="xi6:BusinessTransactionDocumentID"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC343C632C315C"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC39BE83FDF15E">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerTypeofShippingCI" minOccurs="0" form="qualified" type="TYPEOFSHIPPINGCode"/>-->
+                    <xsd:element name="SerTypeofShippingCI" minOccurs="0" form="qualified" type="TYPEOFSHIPPINGCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC39BE83FDF15E"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC436D6DF73164">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerOrderDate" minOccurs="0" form="qualified" type="xi6:Date"/>-->
+                    <xsd:element name="SerOrderDate" minOccurs="0" form="qualified" type="xi6:Date"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC436D6DF73164"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC5C4FE7D2720E">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerTaxNumberCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC5C4FE7D0F20E"/>-->
+                    <xsd:element name="SerInvoiceCustomerTaxNumberCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC5C4FE7D0F20E"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC5C4FE7D2720E"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC5DA710E7320E">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerProductRecipientEMail" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC5DA710E5B20E"/>-->
+                    <xsd:element name="SerProductRecipientEMail" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC5DA710E5B20E"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC5DA710E7320E"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC935F740F32D1">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceCustomerNameCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC935F740DB2D1"/>-->
+                    <xsd:element name="SerInvoiceCustomerNameCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC935F740DB2D1"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC935F740F32D1"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC9836C362D2D2">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerCICompanyOfFrontEndOrder" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC9836C36152D2"/>-->
+                    <xsd:element name="SerCICompanyOfFrontEndOrder" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC9836C36152D2"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC9836C362D2D2"/>
             <xsd:group name="Ext00163E70E2E71ED8BEEC98D0AE4F72D2">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerDrawerCI" minOccurs="0" form="qualified"-->
-                                 <!--type="xi11:Ext00163E70E2E71ED8BEEC98D0AE4DF2D2"/>-->
+                    <xsd:element name="SerDrawerCI" minOccurs="0" form="qualified"
+                                 type="xi11:Ext00163E70E2E71ED8BEEC98D0AE4DF2D2"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEEC98D0AE4F72D2"/>
             <xsd:group name="Ext00163E70E2E71ED8BEECBB0234989372">
                 <xsd:sequence>
-                    <!--<xsd:element name="SerInvoiceTypeCI" minOccurs="0" form="qualified" type="ServiceTypeCode"/>-->
+                    <xsd:element name="SerInvoiceTypeCI" minOccurs="0" form="qualified" type="ServiceTypeCode"/>
                 </xsd:sequence>
             </xsd:group>
             <xsd:attributeGroup name="Ext00163E70E2E71ED8BEECBB0234989372"/>
@@ -731,6 +757,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -749,6 +776,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -788,6 +816,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -1540,6 +1569,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -4723,6 +4753,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -4905,6 +4936,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -4980,6 +5012,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -5231,6 +5264,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -5252,6 +5286,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"
@@ -5269,6 +5304,7 @@
                     xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0"
                     xmlns:xi1="http://0001092235-one-off.sap.com/YNIIVJHSY_"
                     xmlns:xi2="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                    xmlns:xi3="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi4="http://sap.com/xi/AP/Common/Global"
                     xmlns:xi5="http://sap.com/xi/AP/CRM/Global" xmlns:xi6="http://sap.com/xi/AP/Common/GDT"
                     xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xi8="http://sap.com/xi/DocumentServices/Global"
                     xmlns:xi11="http://sap.com/xi/AP/Extensibility/GeneratedObjects"

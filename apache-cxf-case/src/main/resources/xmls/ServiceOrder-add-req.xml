@@ -1,0 +1,71 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:glob="http://sap.com/xi/SAPGlobal20/Global"
+                  xmlns:y62="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                  xmlns:yni="http://0001092235-one-off.sap.com/YNIIVJHSY_">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <glob:ServiceOrderBundleMaintainRequest_sync>
+            <BasicMessageHeader/>
+            <ServiceOrder>
+                <Name languageCode="EN">theme of muller</Name>
+                <BuyerID>RTM181210SH0068</BuyerID>
+                <SalesUnitParty>
+                    <PartyID>A-KS-R6-SH0303CD11</PartyID>
+                </SalesUnitParty>
+                <BuyerParty>
+                    <PartyID>SV005</PartyID>
+                    <Address>
+                        <DisplayName>
+                            <FormattedName>服务维修-A-KS-长春</FormattedName>
+                        </DisplayName>
+                        <Facsimile>
+                            <FormattedNumberDescription>024-62538955</FormattedNumberDescription>
+                            <DefaultIndicator>true</DefaultIndicator>
+                        </Facsimile>
+                        <Telephone>
+                            <FormattedNumberDescription>15840058477</FormattedNumberDescription>
+                            <DefaultConventionalPhoneNumberIndicator>true</DefaultConventionalPhoneNumberIndicator>
+                        </Telephone>
+                        <Telephone>
+                            <FormattedNumberDescription>15840058499</FormattedNumberDescription>
+                            <DefaultMobilePhoneNumberIndicator>true</DefaultMobilePhoneNumberIndicator>
+                            <MobilePhoneNumberIndicator>true</MobilePhoneNumberIndicator>
+                        </Telephone>
+                        <PostalAddress>
+                            <CountryCode>CN</CountryCode>
+                            <CountyName>China</CountyName>
+                            <CityName>沈阳</CityName>
+                            <StreetPostalCode>888888</StreetPostalCode>
+                        </PostalAddress>
+                    </Address>
+                </BuyerParty>
+                <ServicePerformerParty>
+                    <PartyID>8000000135</PartyID>
+                </ServicePerformerParty>
+                <Item>
+                    <ID>10</ID>
+                    <ItemProduct>
+                        <ProductInternalID>60631</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">560.34</MigrationListPrice>
+                </Item>
+                <TextCollection actionCode="01">
+                    <Text actionCode="01">
+                        <TypeCode>10006</TypeCode>
+                        <ContentText languageCode="EN">
+                            RVK181128CC0023 王延伟 15524595995 长春维修网点 VK135马达 60631 1 650 560.34 崔高峰
+                        </ContentText>
+                    </Text>
+                </TextCollection>
+                <yni:SerInvoiceTypeCI>102</yni:SerInvoiceTypeCI>
+                <yni:SerInvoiceCustomerAddressTelCI>15840058479</yni:SerInvoiceCustomerAddressTelCI>
+                <yni:SerInvoiceCustomerNameCI>muller</yni:SerInvoiceCustomerNameCI>
+                <yni:SerInvoiceCustomerTaxNumberCI>210236584</yni:SerInvoiceCustomerTaxNumberCI>
+                <yni:Custom_Service_Category>VK13519</yni:Custom_Service_Category>
+                <yni:Processor_ID>8000000201</yni:Processor_ID>
+            </ServiceOrder>
+        </glob:ServiceOrderBundleMaintainRequest_sync>
+    </soapenv:Body>
+</soapenv:Envelope>
