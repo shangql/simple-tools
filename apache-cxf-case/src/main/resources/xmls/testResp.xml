@@ -1,0 +1,48 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap-env:Header/>
+    <soap-env:Body>
+        <n0:ServiceOrderBundleMaintainConfirmation_sync xmlns:n0="http://sap.com/xi/SAPGlobal20/Global"
+                                                        xmlns:prx="urn:sap.com:proxy:LOU:/1SAI/TAE735F216FA2EBB96040B1:804">
+            <Log>
+                <MaximumLogItemSeverityCode>2</MaximumLogItemSeverityCode>
+                <Item>
+                    <TypeID>017(/CL_CDA_ORGPT/)</TypeID>
+                    <CategoryCode>INC.BOI</CategoryCode>
+                    <SeverityCode>2</SeverityCode>
+                    <Note>6 additional sales areas exist for organizational unit A-KS-R6-SH0303CD11
+                        (A-KS-上海总部-营运部-售后服务部)
+                    </Note>
+                </Item>
+                <Item>
+                    <TypeID>141(/CL_CDA_DOCIT/)</TypeID>
+                    <CategoryCode>INC.BOI</CategoryCode>
+                    <SeverityCode>1</SeverityCode>
+                    <Note>Item 10 already exists; alternative ID proposed</Note>
+                </Item>
+                <Item>
+                    <TypeID>153(/CL_CDA_DOCIT/)</TypeID>
+                    <CategoryCode>ENV.CBM</CategoryCode>
+                    <SeverityCode>2</SeverityCode>
+                    <Note>Gross weight for product missing</Note>
+                </Item>
+                <Item>
+                    <TypeID>152(/CL_CDA_DOCIT/)</TypeID>
+                    <CategoryCode>ENV.CBM</CategoryCode>
+                    <SeverityCode>2</SeverityCode>
+                    <Note>Net weight for product missing</Note>
+                </Item>
+                <Item>
+                    <TypeID>151(/CL_CDA_DOCIT/)</TypeID>
+                    <CategoryCode>ENV.CBM</CategoryCode>
+                    <SeverityCode>2</SeverityCode>
+                    <Note>Net volume for product missing</Note>
+                </Item>
+            </Log>
+            <ServiceOderConfirmation>
+                <ChangeStateID>20190128061704.2400930</ChangeStateID>
+                <UUID>00163e70-e2e7-1ee9-88d8-8a66c44338da</UUID>
+                <ID>00000000000000000000000000000010220</ID>
+            </ServiceOderConfirmation>
+        </n0:ServiceOrderBundleMaintainConfirmation_sync>
+    </soap-env:Body>
+</soap-env:Envelope>

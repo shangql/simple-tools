@@ -12,8 +12,8 @@ import org.apache.http.util.EntityUtils;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URL;
 import java.util.Base64;
+import java.util.Map;
 
 /**
  * Created by boysz on 2018/12/6.
@@ -23,12 +23,12 @@ public class HttpPostClient {
 
     public static void main(String[] args) throws Exception {
 
-        String method = "manageserviceorderin4";
+        String method = "testResp";
 
         HttpPostClient httpPostClient = new HttpPostClient();
 
-        String username = System.getProperty("username");
-        String password = System.getProperty("password");
+        String username = "_SERVICESORD";
+        String password = "Vorwerk123";
         System.out.println(String.format("username=%s,password=%s.",username,password));
 
         if("queryserviceorderin1".equals(method)) {
@@ -41,6 +41,17 @@ public class HttpPostClient {
             String insertxml = httpPostClient.file2xml("xmls/manageserviceorderin4.request.xml");
             String insertrsxml = httpPostClient.doPostInsert(insertxml, String.format("%s:%s", username, password));
             httpPostClient.xml2file("xmls/manageserviceorderin4.response.xml", insertrsxml);
+        }
+
+        if("MaintainBundle".equals(method)) {
+            String insertxml = httpPostClient.file2xml("xmls/MaintainBundle-request.xml");
+            String insertrsxml = httpPostClient.doPostInsert(insertxml, String.format("%s:%s", username, password));
+        }
+
+        if("testResp".equals(method)) {
+            String insertxml = httpPostClient.file2xml("xmls/MaintainBundle-request.xml");
+            Map m = XMLUtil.xmltoMap(insertxml);
+            System.out.println(m);
         }
 
     }
@@ -62,6 +73,7 @@ public class HttpPostClient {
         String authEncode = null;
         try {
             authEncode = Base64.getEncoder().encodeToString(args[1].getBytes("UTF-8"));
+            System.out.println(authEncode);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

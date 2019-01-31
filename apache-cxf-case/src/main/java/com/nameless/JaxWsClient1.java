@@ -3,8 +3,6 @@ package com.nameless;
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.sap.xi.a1s.global.QueryServiceOrderIn;
-import com.sap.xi.a1s.global.StandardFaultMessage;
 import com.sap.xi.ap.common.gdt.*;
 import com.sap.xi.ap.crm.global.*;
 import com.sap.xi.basis.global.Amount;
@@ -72,7 +70,7 @@ public class JaxWsClient1 {
          */
         EXTENDEDName extendedName = new EXTENDEDName();
         extendedName.setLanguageCode("EN");
-        extendedName.setValue("wise程序提交 by ken 2018-12-26 14:01:31");
+        extendedName.setValue("wise程序提交 by ken 2018-12-26 15:59:14");
         // ServiceOrder set
         serviceOrderMaintainRequest.setName(extendedName);
 

@@ -1,0 +1,117 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:glob="http://sap.com/xi/SAPGlobal20/Global"
+                  xmlns:y62="http://0001092235-one-off.sap.com/Y628OLNKY_"
+                  xmlns:yni="http://0001092235-one-off.sap.com/YNIIVJHSY_">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <glob:ServiceOrderBundleMaintainRequest_sync>
+            <BasicMessageHeader/>
+            <ServiceOrder>
+                <Name languageCode="EN">VK150-上海市-2019.01.11-soapui</Name>
+                <BuyerID>RVK190111SH0021</BuyerID>
+                <SalesUnitParty>
+                    <PartyID>A-KS-R6-SH0303CD11</PartyID>
+                </SalesUnitParty>
+                <BuyerParty>
+                    <PartyID>SV021</PartyID>
+                    <Address>
+                        <DisplayName>
+                            <FormattedName>服务维修-A-KS-上海</FormattedName>
+                        </DisplayName>
+                        <Facsimile>
+                            <FormattedNumberDescription>13478225983</FormattedNumberDescription>
+                            <DefaultIndicator>true</DefaultIndicator>
+                        </Facsimile>
+                        <Telephone>
+                            <FormattedNumberDescription>13478225983</FormattedNumberDescription>
+                            <DefaultConventionalPhoneNumberIndicator>true</DefaultConventionalPhoneNumberIndicator>
+                        </Telephone>
+                        <Telephone>
+                            <FormattedNumberDescription>13478225983</FormattedNumberDescription>
+                            <DefaultMobilePhoneNumberIndicator>true</DefaultMobilePhoneNumberIndicator>
+                            <MobilePhoneNumberIndicator>true</MobilePhoneNumberIndicator>
+                        </Telephone>
+                        <PostalAddress>
+                            <CountryCode>CN</CountryCode>
+                            <CountyName>China</CountyName>
+                            <CityName>上海市</CityName>
+                            <StreetPostalCode>999999</StreetPostalCode>
+                        </PostalAddress>
+                    </Address>
+                </BuyerParty>
+                <ServicePerformerParty>
+                    <PartyID>8000000135</PartyID>
+                </ServicePerformerParty>
+                <Item>
+                    <ID>1</ID>
+                    <ItemProduct>
+                        <ProductInternalID>8558</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">43.1</MigrationListPrice>
+                </Item>
+                <Item>
+                    <ID>2</ID>
+                    <ItemProduct>
+                        <ProductInternalID>9007</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">103.45</MigrationListPrice>
+                </Item>
+                <Item>
+                    <ID>3</ID>
+                    <ItemProduct>
+                        <ProductInternalID>12376</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">129.31</MigrationListPrice>
+                </Item>
+                <Item>
+                    <ID>4</ID>
+                    <ItemProduct>
+                        <ProductInternalID>15587</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">258.62</MigrationListPrice>
+                </Item>
+                <Item>
+                    <ID>5</ID>
+                    <ItemProduct>
+                        <ProductInternalID>15811</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">172.41</MigrationListPrice>
+                </Item>
+                <Item>
+                    <ID>6</ID>
+                    <ItemProduct>
+                        <ProductInternalID>15821</ProductInternalID>
+                        <UnitOfMeasure>EA</UnitOfMeasure>
+                    </ItemProduct>
+                    <Quantity unitCode="EA">1</Quantity>
+                    <MigrationListPrice currencyCode="CNY">43.1</MigrationListPrice>
+                </Item>
+                <TextCollection actionCode="01">
+                    <Text actionCode="01">
+                        <TypeCode>10006</TypeCode>
+                        <ContentText languageCode="EN">
+                            RVK190111SH0021|ken|13478225983|上海维修中心|130、135尖细刷|8558|1|50.00|43.10|上海维修员;RVK190111SH0021|ken|13478225983|上海维修中心|130、135尖细管、刷|9007|1|120.00|103.45|上海维修员;RVK190111SH0021|ken|13478225983|上海维修中心|HD12蜡面|12376|1|150.00|129.31|上海维修员;RVK190111SH0021|ken|13478225983|上海维修中心|122滤尘袋|15587|1|300.00|258.62|上海维修员;RVK190111SH0021|ken|13478225983|上海维修中心|130中央支架|15811|1|200.00|172.41|上海维修员;RVK190111SH0021|ken|13478225983|上海维修中心|130滤尘棉|15821|1|50.00|43.10|上海维修员;
+                        </ContentText>
+                    </Text>
+                </TextCollection>
+                <yni:SerInvoiceTypeCI>102</yni:SerInvoiceTypeCI>
+                <yni:SerInvoiceCustomerAddressTelCI>13478225983</yni:SerInvoiceCustomerAddressTelCI>
+                <yni:SerInvoiceCustomerNameCI>ken</yni:SerInvoiceCustomerNameCI>
+                <yni:SerInvoiceCustomerTaxNumberCI></yni:SerInvoiceCustomerTaxNumberCI>
+                <yni:SerCustomerBankAccountCI>中国银行12345678</yni:SerCustomerBankAccountCI>
+                <yni:Custom_Service_Category></yni:Custom_Service_Category>
+                <yni:Processor_ID>8000000201</yni:Processor_ID>
+            </ServiceOrder>
+        </glob:ServiceOrderBundleMaintainRequest_sync>
+    </soapenv:Body>
+</soapenv:Envelope>
